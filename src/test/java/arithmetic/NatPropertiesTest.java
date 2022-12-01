@@ -20,7 +20,8 @@ public class NatPropertiesTest {
         assertEquals(a, a);
     }
 
-    // Inequalities - the relationship is stable under addition and multiplication:
+    // Property being tested : Inequalities
+    // The relationship is stable under addition and multiplication:
     // For all a,b,c that are elements of the set of natural numbers,
     // if a <= b then: a + c <= b + c && a * c <= b * c
     @Property
@@ -34,7 +35,8 @@ public class NatPropertiesTest {
             assertTrue(a.multiply(c).lessThan(b.multiply(c)));
     }
 
-    // Axiom: No negative values for Peano arithmetic because Peano axioms are for
+    // Property being tested : an Axiom
+    // No negative values for Peano arithmetic because Peano axioms are for
     // elements in the set of all natural numbers.
     // assume true that a > 0 && b > 0: if a > b then b - a = 0 else b > a then a -
     // b = 0
